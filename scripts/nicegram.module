@@ -1,0 +1,11 @@
+#!name=Nicegram会员
+#!desc=Nicegram会员,脚本作者Yu9191
+
+[MITM]
+hostname = %APPEND% nicegram.cloud
+
+[Script]
+Nicegram = type=http-response,pattern=^https:\/\/nicegram\.cloud\/api\/v6\/user\/info,requires-body=1,script-path=https://raw.githubusercontent.com/Yu9191/Rewrite/main/Nicegram.js
+
+
+
