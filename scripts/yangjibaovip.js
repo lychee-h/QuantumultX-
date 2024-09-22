@@ -14,41 +14,14 @@
 
 [rewrite_local]
 
-# > 养基宝SVIP@ddgksf2013
-^https?:\/\/.*yangjibao\.com\/(wxapi\/)?account url script-response-body https://gist.githubusercontent.com/ddgksf2013/a0a7607f18a36833762d6cc1b9555bfb/raw/yangjibao.vip.js
+# > 养基宝SVIP
+^https?:\/\/.*yangjibao\.com\/(wxapi\/)?account url script-response-body https://raw.githubusercontent.com/lychee-h/QuantumultX-backup/main/scripts/yangjibaovip.js
 
 [mitm]
 
 hostname = *.yangjibao.com
 
 ***********************************************/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 var body = $response.body.replace(/vip_label":false/g, 'vip_label":true')
 						 .replace(/vip_expiry_date":null/g, 'vip_expiry_date":"2099-12-31"')
 						 .replace(/is_pay":false/g, 'is_pay":true');
